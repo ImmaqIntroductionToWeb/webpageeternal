@@ -2,11 +2,11 @@
 const validUsers = {
     "pmhlanga20@gmail.com": {
         password: "0614388483",
-        redirectUrl: "file:///C:/Users/Admin/Desktop/Important/EternityApp/Paula-Playist.html"
+        redirectUrl: "https://immaqintroductiontoweb.github.io/webpageeternal/Paula-Playist.html"
     },
     "amandamutheiwana.am@gmail.com": {
         password: "Mazekeen2012",
-        redirectUrl: "file:///C:/Users/Admin/Desktop/Important/EternityApp/AmandaPlayist.html"
+        redirectUrl: "https://immaqintroductiontoweb.github.io/webpageeternal/AmandaPlayist.html"
     }
 };
 
