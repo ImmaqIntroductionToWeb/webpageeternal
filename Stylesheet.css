@@ -1,0 +1,340 @@
+/* Reset margins and paddings for consistent layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: sans-serif;
+}
+
+/* Ensure scaling on zoom */
+html {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1);
+    transform-origin: 0 0;
+}
+
+/* Center the title */
+h1 {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5vw; /* Scalable font size */
+    margin-top: 20px;
+}
+
+/* Empty box */
+.empty-box {
+    width: 80%; /* Use percentage for responsiveness */
+    height: 15px;
+    border-radius: 5px;
+    margin-right: 500px;
+    margin-left: 200px;
+    background-color: gray;
+    padding: 30px;
+}
+
+/* Main boxes container */
+.the-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items on small screens */
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+/* Styling for each box (Stranger, Friend, Girlfriend, Wife) */
+.Stranger, .Friend, .G-friend, .Wife {
+    width: 15vw; /* Responsive width */
+    height: 15vw; /* Responsive height */
+    background-color: red;
+    border-radius: 10px;
+    padding: 1px;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw; /* Scalable font size */
+    font-weight: bold;
+    display: flex;
+    justify-content: center; 
+}
+
+/* Skew text styling */
+.skew-text2 {
+    transform: rotate(-40deg);
+    font-family:"sans-serif", cursive;
+    font-size: 80PX; 
+    margin-top: 20%;
+}
+
+.skew-text{
+    transform: rotate(-40deg);
+    font-family:"Brush Script MT", cursive;
+    font-size: 200PX; 
+    
+}
+
+
+/* Char box containers */
+.char-box, .char-box2, .char-box3, .char-box4 {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of elements */
+    justify-content: space-between;
+    margin: 10px 20%; /* Use percentage margins for responsiveness */
+}
+
+/* Char box items */
+.char-stranger, .char-friend, .char-girlfriend, .char-wife,
+.char_friend, .char_girlfriend, .char_wife {
+    color: white;
+    font-size: 1.5vw; /* Scalable font size */
+    text-align: center;
+    width: 22%; /* Make width responsive */
+    margin: 10px 0;
+}
+
+/* Specific styling for Wife text */
+.char-wife pr {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+/* Adjust margin and layout for mobile screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Increase font size for mobile */
+    }
+
+    .Stranger, .Friend, .G-friend, .Wife {
+        width: 40vw; /* Adjust width for mobile */
+        height: 40vw; /* Adjust height for mobile */
+        font-size: 5vw; /* Larger font for mobile */
+        padding: 10px;
+    }
+
+    .char-box, .char-box2, .char-box3, .char-box4 {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .char-stranger, .char-friend, .char-girlfriend, .char-wife {
+        width: 80%; /* Stack boxes vertically on small screens */
+        font-size: 4vw;
+    }
+
+    .char_friend, .char_girlfriend, .char_wife {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+h3{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+color:red;
+font-weight: bold;
+font-size: 50px;
+font-family: sans-serif;
+}
+
+.image{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    font-size: x-large;
+    margin-top: 1%;
+    padding: 10px;
+}
+pre{
+    margin-right: 10%;
+}
+
+img{
+    width: 400px;
+}
+/*
+.watch-everywhere{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+.main{
+   display: flex;
+   font-size: 200%;
+   justify-content: center;
+   color:white;
+   margin-right: 15%;
+   flex-direction: column; 
+   align-items: center;
+   font-family: sans-serif;
+}
+
+.fucken-button {
+    display: flex;
+    justify-content: center; 
+    padding: 20px; 
+    margin-right: 50px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 15px 100px; 
+    background-color: red; 
+    color: white; 
+    white-space: nowrap;
+    font-size: 18px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 1%;
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: darkred; 
+}
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+.mainheading {
+    color: red;
+    font-size: 5vw; /* Scalable font size */
+    margin-bottom:50PX;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.login-container {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure it's vertically centered */
+}
+
+.input-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2vw; /* Responsive margin */
+    width: 80%; /* Make the width responsive */
+    max-width: 500px; /* Set a max width for the form */
+}
+
+button {
+    padding: 5px;
+    width: 110%; /* Responsive button width */
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Scalable font size */
+    margin-top: 20px;
+}
+
+.input-class{
+    margin-top: 0;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.Email-input, .password-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: lightgrey;
+    font-size: 1rem; /* Set font size */
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 20px;
+    color: white;
+    font-size: 1rem; /* Scalable font size */
+    text-align: center;
+}
+
+footer h4 {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 10vw; /* Increase font size for smaller screens */
+    }
+
+    .input-class {
+        width: 90%; /* Form width takes 90% of the screen */
+    }
+
+    button {
+
+        width: 70%; /* Button takes 70% width on smaller screens */
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 20vw;
+    background-color: rgba(30, 0, 0, 1.5);
+}
+.play{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.last-h1{
+    font-size: 30px;
+    color: red;
+    display: flex;
+    flex-direction: center;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.wwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
